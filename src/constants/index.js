@@ -1,0 +1,1 @@
+export {default as logo1} from './images'

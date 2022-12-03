@@ -1,0 +1,36 @@
+.carasoul__container {
+  height: 40vh;
+  width: 100%;
+  background-color: var(--dark-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.carasoul__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  position: relative;
+
+  img {
+    position: absolute;
+    object-fit: contain;
+    width: 55%;
+    filter: invert(1);
+  }
+}
+
+.carasoul__img__active {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.carasoul__img__not-active {
+  opacity: 0;
+  transform: translateY(-100%);
+}
